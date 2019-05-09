@@ -8,7 +8,7 @@
                             password = '$password'", $koneksi);
 
             if(mysql_num_rows($sql) != 0) {
-                header("location: dashboard-post.php");
+                header("location: dashboard-index.php");
             }
     }
 
