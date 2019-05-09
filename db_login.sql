@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 08 Bulan Mei 2019 pada 14.46
+-- Waktu pembuatan: 09 Bulan Mei 2019 pada 21.59
 -- Versi server: 10.1.38-MariaDB
--- Versi PHP: 7.3.2
+-- Versi PHP: 5.6.40
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -29,9 +29,18 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `tbl_galery` (
-  `nama_gambar` varchar(50) DEFAULT NULL,
-  `url_gambar` varchar(250) DEFAULT NULL
+  `nama_gambar` varchar(50) NOT NULL,
+  `url_gambar` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `tbl_galery`
+--
+
+INSERT INTO `tbl_galery` (`nama_gambar`, `url_gambar`) VALUES
+('afasfasv', '09052019212939Capture2.PNG'),
+('xxxxx', '09052019193518IMG-20190430-WA0041.jpg'),
+('zadasdas', '09052019210108Capture.PNG');
 
 -- --------------------------------------------------------
 
@@ -40,10 +49,18 @@ CREATE TABLE `tbl_galery` (
 --
 
 CREATE TABLE `tbl_post` (
-  `judul_post` varchar(50) DEFAULT NULL,
-  `isi_post` varchar(250) DEFAULT NULL,
-  `tgl_post` date DEFAULT NULL
+  `judul_post` varchar(50) NOT NULL,
+  `isi_post` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `tbl_post`
+--
+
+INSERT INTO `tbl_post` (`judul_post`, `isi_post`) VALUES
+('ada', 'xxxx'),
+('asd', 'hahaha'),
+('xxx', 'zzz');
 
 -- --------------------------------------------------------
 
@@ -53,7 +70,7 @@ CREATE TABLE `tbl_post` (
 
 CREATE TABLE `tbl_user` (
   `username` varchar(20) NOT NULL,
-  `password` varchar(20) DEFAULT NULL
+  `password` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
