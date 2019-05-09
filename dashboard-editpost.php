@@ -94,7 +94,7 @@ include 'database.php';
 
                 
           <li class="nav-item">
-            <a class="nav-link"  href="#auth" aria-expanded="false" aria-controls="auth">
+            <a class="nav-link"  href="index.php" aria-expanded="false" aria-controls="auth">
               <i class="menu-icon mdi mdi-logout"></i>
               <span class="menu-title">Log Out</span>
               <i class></i>
