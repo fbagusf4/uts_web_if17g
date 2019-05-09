@@ -218,7 +218,7 @@ include 'database.php';
 			//eksekusi
 			$insert = mysqli_query($dbcon, $query);
 			//setelah data berhasil di input redirect ke halaman index
-			header('Location: dashboard-index.php');
+			header("location: dashboard-index.php");
 		
 		}
 		?>
